@@ -320,6 +320,7 @@ footer {
 .listing-content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .listing-content > .item {
   margin-left: 24px;
