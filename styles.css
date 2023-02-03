@@ -310,8 +310,6 @@ footer {
 .list-wrap {
   display: flex;
   padding-bottom: 120px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .list-wrap > .listing-content {
   /* padding-left: auto;
