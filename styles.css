@@ -37,6 +37,20 @@ ul {
   margin: 0;
   padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* LOGO */
 .logo {
   margin-right: 76px;
@@ -66,7 +80,6 @@ ul {
 }
 .logo-footer {
   display: inline-block;
-  /* padding-bottom: 16px; */
 
   font-family: 'Raleway';
   font-style: normal;
@@ -79,19 +92,18 @@ ul {
   color: var(--light);
   text-decoration: none;
 }
+.logo.margin {
+  display: block;
+  margin-bottom: 16px;
+}
 /* Main navigation */
 .main-nav {
   display: flex;
   align-items: center;
 }
-.container.main-nav {
-  padding-left: 156px;
-  padding-right: 156px;
-}
 
 .site-nav {
   display: flex;
-  margin-left: 76px;
 }
 .site-nav .item + .item {
   margin-left: 40px;
@@ -113,16 +125,13 @@ ul {
   margin-left: auto;
 }
 
-.container.benefits,
-.container.doing,
-.container.team {
-  padding-bottom: 120px;
-}
-
 /* Typography */
 .hero-title {
   margin-top: 0;
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 496px;
 
   font-weight: 700;
   font-size: 56px;
@@ -134,9 +143,7 @@ ul {
 .main-subtitle {
   margin-top: 0;
   margin-bottom: 72px;
-  padding-top: 120px;
 
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   text-align: center;
@@ -146,8 +153,13 @@ ul {
   color: var(--dark);
 }
 
+.main-subtitle.hidden {
+  visibility: hidden;
+}
+
 .benefits-title {
   margin-top: 0;
+  margin-bottom: 8px;
 
   font-size: 20px;
   line-height: 1.2;
@@ -158,6 +170,7 @@ ul {
 
 .portfolio-title {
   margin-top: 0;
+  margin-bottom: 8px;
 
   font-weight: 500;
   font-size: 20px;
@@ -165,6 +178,9 @@ ul {
   letter-spacing: 0.02em;
 
   color: var(--dark);
+}
+.container.doing {
+  padding-top: 0;
 }
 
 /* Active elements */
@@ -224,6 +240,7 @@ button:focus {
   border-color: var(--accent);
 }
 .hero-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -237,15 +254,15 @@ header {
   display: block;
   border-bottom: 1px solid var(--accent);
 }
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .section-content {
   display: flex;
-  padding-left: 156px;
-  padding-right: 156px;
 }
 .section-content.team {
   display: flex;
-  padding-left: 156px;
-  padding-right: 156px;
   text-align: center;
 }
 .section-content .item:not(:last-child) {
@@ -260,13 +277,17 @@ footer {
   /* height: 310px; */
   background-color: var(--dark);
 }
+.footer {
+  width: 264px;
+}
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1440px;
-  padding-left: 12px;
-  padding-right: 12px;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+
   /* outline: 2px solid tomato; */
 }
 
@@ -277,14 +298,31 @@ footer {
   margin-left: auto;
   margin-top: auto;
   text-align: center;
-  height: 640px;
+}
+
+/* Team cards */
+.card {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: var(--white);
+}
+.name {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--dark);
 }
 
 .footer.container {
   padding-top: 100px;
-  padding-left: 156px;
-  padding-right: 1020px;
   padding-bottom: 100px;
+}
+.portfolio-container {
+  padding-top: 0;
+  padding-bottom: 120px;
 }
 
 .portfolio > .portfolio.filters {
@@ -298,7 +336,6 @@ footer {
 .portfolio.filters {
   display: flex;
 
-  padding-top: 96px;
   padding-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
@@ -306,14 +343,19 @@ footer {
 .portfolio.filters .item + .item {
   margin-left: 40px;
 }
+.portfolio-card {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  border-left: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
 
 .list-wrap {
   display: flex;
-  padding-bottom: 120px;
-}
-.list-wrap > .listing-content {
-  /* padding-left: auto;
-  padding-right: auto; */
 }
 .listing-content {
   display: flex;
@@ -325,6 +367,10 @@ footer {
   margin-bottom: 48px;
 }
 
-.listing-content .item:nth-child(3n + 1):nth-child(3n + 1) {
+.listing-content .item:nth-child(3n + 1) {
   margin-left: 0;
+}
+
+.listing-content .item:nth-child(n + 7) {
+  margin-bottom: 0;
 }
