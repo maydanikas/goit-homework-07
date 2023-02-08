@@ -8,8 +8,8 @@ html {
   --dark: #2e2f42;
   --text: #434455;
   --hover: #404bbf;
-  --light: #f4f4fd;
   --accent: #e7e9fc;
+  --light: #f4f4fd;
   --white: #ffffff;
 }
 
@@ -364,13 +364,16 @@ footer {
 
 /* -----------Team cards------------- */
 .card {
-  padding-top: 32px;
+  /* padding-top: 32px; */
   padding-bottom: 32px;
   background: var(--white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 .portfolio-card {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-top: 32px; */
+  /* padding-bottom: 32px; */
   padding-left: 16px;
   padding-right: 16px;
 
@@ -379,6 +382,7 @@ footer {
   border-bottom: 1px solid var(--accent);
 }
 .name {
+  margin-top: 32px;
   margin-bottom: 8px;
   font-style: normal;
   font-size: 20px;
