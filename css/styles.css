@@ -306,6 +306,14 @@ section {
 .our-team {
   background-color: var(--light);
 }
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+.customers-list {
+  display: flex;
+}
+
 footer {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -318,12 +326,22 @@ footer {
 }
 
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
   background-color: var(--dark);
+  background-image: linear-gradient(
+      0deg,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../img/people-office.jpg);
+
   margin-left: auto;
   margin-top: auto;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .container {
@@ -342,6 +360,9 @@ footer {
 .portfolio-container {
   padding-top: 96px;
   padding-bottom: 120px;
+}
+.customers > .container {
+  padding-top: 0;
 }
 
 .portfolio > .portfolio.filters {
