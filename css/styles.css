@@ -310,8 +310,27 @@ section {
   padding-top: 130px;
   padding-bottom: 120px;
 }
-.customers-list {
+.customer-list {
   display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.customer-list > .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 24px;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.item > .icon {
+  display: flex;
+  width: 104px;
+  height: 56px;
 }
 
 footer {
