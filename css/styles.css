@@ -348,6 +348,10 @@ section {
   justify-content: center;
   align-items: center;
 }
+.network-svg:hover {
+  background-color: var(--hover);
+}
+
 .network-item {
   width: 16px;
   height: 16px;
@@ -374,11 +378,26 @@ section {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
-.item > .icon {
+
+/* -------icons of Customers section----- */
+
+.item > .icon-svg {
   display: flex;
   width: 104px;
   height: 56px;
 }
+
+.customers .icon-svg {
+  fill: #8e8f99;
+}
+.customers .icon-svg:hover {
+  cursor: pointer;
+  fill: var(--hover);
+}
+.customers .item:hover {
+  border-color: var(--hover);
+}
+/* -------/icons of Customers section----- */
 
 footer {
   padding-top: 100px;
@@ -419,6 +438,9 @@ footer {
 
   justify-content: center;
   align-items: center;
+}
+.icon-wrap:hover {
+  background: #31d0aa;
 }
 
 .container {
