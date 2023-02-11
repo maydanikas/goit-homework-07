@@ -507,7 +507,7 @@ footer {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-.portfolio-card {
+/* .portfolio-card {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
@@ -517,7 +517,7 @@ footer {
   border-right: 1px solid var(--accent);
   border-bottom: 1px solid var(--accent);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+} */
 .name {
   margin-top: 32px;
   margin-bottom: 8px;
@@ -527,4 +527,20 @@ footer {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark);
+}
+.portfolio-descr {
+  margin-top: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
