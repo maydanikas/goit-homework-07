@@ -516,8 +516,8 @@ footer {
   border-radius: 0px 0px 4px 4px;
 }
 .portfolio-card {
-  /* padding-top: 32px; */
-  /* padding-bottom: 32px; */
+  padding-top: 32px;
+  padding-bottom: 32px;
   padding-left: 16px;
   padding-right: 16px;
 
