@@ -11,6 +11,7 @@ html {
   --accent: #e7e9fc;
   --light: #f4f4fd;
   --white: #ffffff;
+  --success: #31d0aa;
 }
 
 body {
@@ -430,7 +431,7 @@ footer {
   margin-top: 16px;
 }
 .icon-wrap {
-  display: flex;
+  display: flex; 
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -440,7 +441,7 @@ footer {
   align-items: center;
 }
 .icon-wrap:hover {
-  background: #31d0aa;
+  background: var(--success);
 }
 
 .container {
