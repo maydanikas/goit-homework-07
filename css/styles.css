@@ -431,7 +431,7 @@ footer {
   margin-top: 16px;
 }
 .icon-wrap {
-  display: flex; 
+  display: flex;
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -511,12 +511,19 @@ footer {
 
 .card.project {
   cursor: pointer;
-  border-left, border-right, border-bottom: 1px solid var(--accent);
+  border-left: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+.card-image {
+  border: none;
+}
+.wrap-shadow {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-.card.project:hover {
-  border-left, border-right, border-bottom: 0.5px solid #F4F4FD;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.wrap-shadow:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .name {
@@ -530,7 +537,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   color: var(--dark);
 }
 .portfolio-descr {
-  margin-top: 32px;
+  padding-top: 32px;
   margin-left: 16px;
   margin-right: 16px;
 
