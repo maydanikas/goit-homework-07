@@ -507,17 +507,17 @@ footer {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-/* .portfolio-card {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
-  padding-right: 16px;
 
-  border-left: 1px solid var(--accent);
-  border-right: 1px solid var(--accent);
-  border-bottom: 1px solid var(--accent);
+.card.project {
+  cursor: pointer;
+  border-left, border-right, border-bottom: 1px solid var(--accent);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-} */
+}
+.card.project:hover {
+  border-left, border-right, border-bottom: 0.5px solid #F4F4FD;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .name {
   margin-top: 32px;
   margin-bottom: 8px;
@@ -531,7 +531,7 @@ footer {
 .portfolio-descr {
   margin-top: 32px;
   margin-left: 16px;
-  margin-right: 16px;
+  margin-right: ;
 
   font-style: normal;
   font-size: 20px;
