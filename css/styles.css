@@ -485,21 +485,14 @@ footer {
 
 /* ----------------Sections--------- */
 
-.list-wrap {
-  display: flex;
-}
 .listing-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 24px;
 }
 .listing-content > .item {
-  margin-left: 24px;
   margin-bottom: 48px;
-}
-
-.listing-content .item:nth-child(3n + 1) {
-  margin-left: 0;
 }
 
 .listing-content .item:nth-child(n + 7) {
@@ -508,7 +501,6 @@ footer {
 
 /* -----------Team cards------------- */
 .card {
-  /* padding-top: 32px; */
   padding-bottom: 32px;
   background: var(--white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
