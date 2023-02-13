@@ -92,9 +92,20 @@ ul {
   color: var(--light);
   text-decoration: none;
 }
-.logo.margin {
+.footer-logo {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 16px;'
+  margin-right: 76px;
+
+  color: var(--primary-brand);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;'
 }
 /* ----------LOGO-------------- */
 
@@ -174,7 +185,6 @@ ul {
   margin-top: 8px;
   margin-bottom: 8px;
 
-  font-weight: 500px;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -326,11 +336,12 @@ section {
   gap: 24px;
   justify-content: center;
   align-items: center;
+  margin-top: 8px;
 }
 
 .network-svg {
   display: flex;
-  margin-top: 8px;
+
   width: 40px;
   height: 40px;
   gap: 24px;
@@ -398,11 +409,12 @@ section {
 footer {
   padding-top: 100px;
   padding-bottom: 100px;
-  color: var(--accent);
+
   background-color: var(--dark);
 }
 .footer {
   width: 264px;
+  color: var(--accent);
 }
 .footer.container {
   display: flex;
