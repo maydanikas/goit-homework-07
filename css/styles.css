@@ -128,7 +128,7 @@ ul {
   display: block;
   content: '';
   width: 100%;
-  border-bottom: solid 2px;
+  border-bottom: solid 4px;
   border-radius: 2px;
   color: var(--hover);
   position: absolute;
