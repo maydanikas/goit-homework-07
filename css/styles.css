@@ -12,6 +12,7 @@ html {
   --light: #f4f4fd;
   --white: #ffffff;
   --success: #31d0aa;
+  --moda-bg: #fcfcfc;
 }
 
 body {
@@ -270,7 +271,7 @@ ul {
 .nav-address:focus {
   color: var(--hover);
 }
-button {
+/* button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -283,19 +284,13 @@ button {
   background: var(--light);
   border: 1px solid transparent;
   border-radius: 4px;
-}
-button:hover,
-button:focus {
-  background: var(--hover);
-  color: var(--white);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-color: var(--hover);
-}
-.filter-button {
-  border-color: var(--accent);
-}
+} */
+
 .hero-button {
+  min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -303,7 +298,36 @@ button:focus {
   padding: 16px 32px;
   background: var(--primary-brand);
   color: var(--white);
+  border-radius: 4px;
+  border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: var(--hover);
+  color: var(--white);
+  border-color: var(--hover);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-button {
+  cursor: pointer;
+  background: var(--light);
+  color: var(--primary-brand);
+
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background: var(--hover);
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-color: var(--hover);
 }
 /* ----------------Sections--------- */
 header {
@@ -570,6 +594,7 @@ footer {
   transform: translateY(100%);
   transition: transform 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* overflow: auto; */
 }
 
 .name {
@@ -584,4 +609,42 @@ footer {
 }
 .team-position {
   text-align: center;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+.modal {
+  position: absolute;
+  width: 408px;
+  min-height: 576px;
+  left: 516px;
+  top: 88px;
+  background-color: var(--moda-bg);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 24px;
+}
+.data-modal-close {
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: 0;
 }
