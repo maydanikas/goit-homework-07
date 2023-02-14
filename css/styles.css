@@ -135,6 +135,9 @@ ul {
   bottom: -1px;
   left: 0;
 }
+.active > .nav-links {
+  color: var(--hover);
+}
 
 /* .site-nav .item + .item {
   margin-left: 40px;
