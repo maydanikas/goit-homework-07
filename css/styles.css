@@ -135,7 +135,7 @@ ul {
   bottom: -1px;
   left: 0;
 }
-.active > .nav-links {
+.nav-links.active {
   color: var(--hover);
 }
 
@@ -258,7 +258,7 @@ header > .container {
   color: var(--dark);
   text-decoration: none;
   position: relative;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-links:hover,
 .nav-links:focus {
@@ -274,7 +274,7 @@ header > .container {
   letter-spacing: 0.02em;
   color: var(--text);
   text-decoration: none;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-address:hover,
@@ -310,17 +310,14 @@ header > .container {
   color: var(--white);
   border-radius: 4px;
   border-color: transparent;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background: var(--hover);
-  color: var(--white);
-  border-color: var(--hover);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-button {
@@ -334,7 +331,9 @@ header > .container {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.04em;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -407,15 +406,11 @@ section {
   background-color: var(--primary-brand);
   justify-content: center;
   align-items: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .network-svg:hover {
   background-color: var(--hover);
 }
-.network-svg:focus {
-  background-color: var(--hover);
-}
-
 .network-svg:focus {
   background-color: var(--hover);
 }
@@ -440,7 +435,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-svg > .icon {
   width: 104px;
@@ -456,14 +452,12 @@ section {
   border-radius: 4px;
 }
 
-.customers .icon-svg:hover {
-  border-color: var(--hover);
-  fill: var(--hover);
-}
+.customers .icon-svg:hover,
 .customers .icon-svg:focus {
   border-color: var(--hover);
   fill: var(--hover);
 }
+
 /* -------/icons of Customers section----- */
 
 footer {
@@ -503,7 +497,7 @@ footer {
 
   justify-content: center;
   align-items: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-wrap:hover {
   background: var(--success);
@@ -637,7 +631,8 @@ footer {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: absolute;
