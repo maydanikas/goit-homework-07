@@ -847,7 +847,7 @@ footer {
 .check-icon {
   position: absolute;
   translate: 0;
-  transform: translate(40%, 20%);
+  transform: translate(50%, 25%);
 }
 
 .form-label {
@@ -898,7 +898,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
-.comment-label {
+/* .comment-label {
   display: flex;
   margin-left: 8px;
   font-weight: 400;
@@ -907,7 +907,7 @@ footer {
   letter-spacing: 0.04em;
 
   color: #757575;
-}
+} */
 
 .terms-check {
   display: flex;
@@ -926,6 +926,7 @@ footer {
 .check-wrap {
   position: relative;
   display: inline-block;
+  margin-right: 8px;
 
   width: 16px;
   height: 16px;
@@ -935,6 +936,7 @@ footer {
 }
 .terms-check:checked + .check-label > .check-wrap {
   background-color: var(--hover);
+  border: none;
 }
 
 .check-label {
