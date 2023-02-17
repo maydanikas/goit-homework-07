@@ -13,6 +13,7 @@ html {
   --white: #ffffff;
   --success: #31d0aa;
   --moda-bg: #fcfcfc;
+  --light-slate: #8e8f99;
 }
 
 body {
@@ -672,7 +673,6 @@ footer {
 /* Footer Subscription */
 
 .footer-subscribe {
-  display: block;
   margin-left: auto;
 }
 .subscribe-button {
@@ -691,7 +691,7 @@ footer {
   letter-spacing: 0.04em;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-button:hover,
 .subscribe-button:focus {
@@ -716,6 +716,11 @@ footer {
 
   font-size: 12px;
   font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.subscribe-button::placeholder {
   line-height: 2;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
@@ -756,18 +761,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .data-modal-close:hover {
   background-color: var(--hover);
   fill: var(--white);
-  border-color: transparent;
 }
 
 .modal-title {
   margin-bottom: 16px;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
@@ -792,7 +797,7 @@ footer {
   color: var(--white);
   border-radius: 4px;
   border-color: transparent;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-button:hover,
@@ -840,20 +845,15 @@ footer {
 }
 
 .check-icon {
-  width: 16px;
-  height: 16px;
-  border: 1.25px solid var(--dark);
-  border-radius: 2px;
-  fill: var(--white);
-  /* margin-right: 8px; */
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  translate: 0;
+  transform: translate(40%, 20%);
 }
 
 .form-label {
   display: inline-block;
   margin-bottom: 4px;
+  color: var(--light-slate);
 }
 
 .input-wrap {
@@ -867,6 +867,7 @@ footer {
   padding: 8px 16px;
   display: block;
   width: 100%;
+  outline: none;
 
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -913,10 +914,27 @@ footer {
   align-items: center;
 }
 
-.terms-check:checked + .check-label > .check-icon {
-  background-color: var(--hover);
+.terms-check:checked + .check-label .check-icon {
   fill: var(--white);
   border: none;
+}
+.terms-wrap {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.check-wrap {
+  position: relative;
+  display: inline-block;
+
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--dark);
+  border-radius: 2px;
+  fill: var(--white);
+}
+.terms-check:checked + .check-label > .check-wrap {
+  background-color: var(--hover);
 }
 
 .check-label {
