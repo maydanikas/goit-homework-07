@@ -720,7 +720,7 @@ footer {
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-button::placeholder {
+.subscribe-input::placeholder {
   line-height: 2;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
@@ -918,10 +918,11 @@ footer {
   fill: var(--white);
   border: none;
 }
-.terms-wrap {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+
+.check-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .check-wrap {
   position: relative;
@@ -938,10 +939,12 @@ footer {
   background-color: var(--hover);
   border: none;
 }
+.terms-link {
+  color: var(--primary-brand);
+}
 
-.check-label {
-  display: flex;
-  gap: 8px;
+.check-text {
+  display: inline-block;
 }
 
 .submit-button {
