@@ -149,4 +149,34 @@
     justify-content: center;
     /* width: 428px; */
   }
+
+  /* FOOTER  */
+
+  .footer.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+  }
+  .footer-logo {
+    margin-right: ;
+  }
+
+  .footer-box {
+    margin-right: 0;
+    width: 264px;
+    text-align: left;
+  }
+
+  .footer-media {
+    margin-left: 24px;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .footer-subscribe {
+    /* margin-left: auto; */
+    margin-top: 72px;
+  }
+  .subscription-wrap {
+    flex-wrap: nowrap;
+  }
 }
