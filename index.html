@@ -13,7 +13,12 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/var.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/responsible.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
 </head>
 
 <body>
@@ -24,12 +29,15 @@
 
             <nav class=" main-nav">
                 <a href="./" class="logo">WEB<span class="logo-gray">STUDIO</span></a>
+
                 <ul class="site-nav">
                     <li class="item "><a href="./index.html" class="nav-links active">Studio</a></li>
                     <li class="item"><a href="./portfolio.html" class="nav-links">Portfolio</a></li>
                     <li class="item"><a href="" class="nav-links">Contacts</a></li>
                 </ul>
+
             </nav>
+
             <address class="address">
 
                 <ul class="address-ul">
@@ -38,6 +46,11 @@
                     <li class="item"><a href="tel:+110001111111" class="nav-address">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button type="button" class="menu-open-btn">
+                <svg class="menu-open-icon">
+                    <use href="./img/icons.svg#menu"></use>
+                </svg>
+            </button>
 
         </div>
 
@@ -58,7 +71,7 @@
         <section class="benefits">
             <div class="container">
                 <h2 class="visually-hidden">Benefits</h2>
-                <ul class="section-content">
+                <ul class="benefits-content">
                     <li class="item">
                         <div class="benefit-icon">
                             <svg class="icon">
@@ -79,7 +92,8 @@
                         </div>
 
                         <h3 class=" benefits-title">Punctuality</h3>
-                        <p>Bring the key message to the brand's audience for the best price within the shortest possible
+                        <p class="benefits-text">Bring the key message to the brand's audience for the best price within
+                            the shortest possible
                             time.</p>
                     </li>
 
@@ -91,7 +105,8 @@
                         </div>
 
                         <h3 class=" benefits-title">Diligence</h3>
-                        <p>Research and confirm brands that present the strongest digital growth opportunities and
+                        <p class="benefits-text">Research and confirm brands that present the strongest digital growth
+                            opportunities and
                             minimize
                             risk.</p>
 
@@ -105,7 +120,8 @@
                         </div>
 
                         <h3 class=" benefits-title">Technologies</h3>
-                        <p>Design practice focused on digital experiences. We bring forth a deep passion for
+                        <p class="benefits-text">Design practice focused on digital experiences. We bring forth a deep
+                            passion for
                             problem-solving.</p>
                     </li>
                 </ul>
@@ -118,13 +134,16 @@
                 <h2 class="main-subtitle">What are we doing</h2>
                 <ul class="section-content">
                     <li class="item">
-                        <img src="./img/img1.jpg" alt="Backend development" width="360">
+                        <img srcset="./img/works/img1-2x.jpg 2x" src="./img/works/img1.jpg" alt="Backend development"
+                            width="360">
                     </li>
                     <li class="item">
-                        <img src="./img/img2.jpg" alt="Mobile ads development" width="360">
+                        <img srcset="./img/works/img2-2x.jpg 2x" src="./img/works/img2.jpg" alt="Mobile ads development"
+                            width="360">
                     </li>
                     <li class="item">
-                        <img src="./img/img3.jpg" alt="Crossplatform adoptation" width="360">
+                        <img srcset="./img/works/img3-2x.jpg 2x" src="./img/works/img3.jpg"
+                            alt="Crossplatform adoptation" width="360">
                     </li>
                 </ul>
             </div>
@@ -365,7 +384,7 @@
 
     </main>
 
-    <footer>
+    <!-- <footer>
         <div class="footer container">
             <div class="footer-box">
                 <a href="./index.html" class="footer-logo">WEB<span class="logo-footer">STUDIO</span></a>
@@ -427,9 +446,10 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
     <!-- Modal  -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="data-modal-close" data-modal-close>
                 <svg class="modal-close-icon" width="8" height="8">
@@ -492,7 +512,7 @@
 
             </form>
         </div>
-    </div>
+    </div> -->
 
 
     <script src="./js/modal.js"></script>
