@@ -197,4 +197,14 @@
     margin-left: auto;
     margin-top: 0;
   }
+
+  /* MODAL  */
+
+  .modal {
+    position: absolute;
+    width: 408px;
+    height: 576px;
+    left: 50%;
+    top: 50%;
+  }
 }

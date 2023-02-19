@@ -13,7 +13,12 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/var.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/responsible.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
 </head>
 
 <body>
@@ -24,12 +29,15 @@
 
             <nav class=" main-nav">
                 <a href="./" class="logo">WEB<span class="logo-gray">STUDIO</span></a>
+
                 <ul class="site-nav">
-                    <li class="item "><a href="./index.html" class="nav-links">Studio</a></li>
-                    <li class="item"><a href="./portfolio.html" class="nav-links active">Portfolio</a></li>
+                    <li class="item "><a href="./index.html" class="nav-links active">Studio</a></li>
+                    <li class="item"><a href="./portfolio.html" class="nav-links">Portfolio</a></li>
                     <li class="item"><a href="" class="nav-links">Contacts</a></li>
                 </ul>
+
             </nav>
+
             <address class="address">
 
                 <ul class="address-ul">
@@ -38,10 +46,70 @@
                     <li class="item"><a href="tel:+110001111111" class="nav-address">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button type="button" class="menu-open-btn" data-menu-open>
+                <svg class="menu-open-icon">
+                    <use href="./img/icons.svg#menu"></use>
+                </svg>
+            </button>
 
         </div>
 
+        <div class="mob-menu is-hidden" data-menu>
 
+            <div class="container">
+                <div>
+                    <button class="menu-close" data-menu-close>
+                        <svg class="close-icon" width="8" height="8">
+                            <use href="./img/icons.svg#close"></use>
+                        </svg>
+                    </button>
+                    <ul class="mob-menu-list">
+                        <li class="mob-menu-item "><a href="./index.html" class="mob-menu-link">Studio</a></li>
+                        <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link">Portfolio</a></li>
+                        <li class="mob-menu-item"><a href="" class="mob-menu-link">Contacts</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <a href="tel:+110001111111" class="mob-menu-tel">+11 (000) 111-11-11</a>
+                    <a href="mailto:info@devstudio.com" class="mob-menu-mail">info@devstudio.com</a>
+
+
+
+                    <ul class="mob-soc-links">
+                        <li class="mob-soc-item"><a href="#" class="icon-wrap">
+                                <svg class="network-footer">
+                                    <use href="./img/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+
+                        </li>
+                        <li class="mob-soc-item"><a href="#" class="icon-wrap">
+                                <svg class="network-footer">
+                                    <use href="./img/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+
+                        </li>
+                        <li class="mob-soc-item"><a href="#" class="icon-wrap">
+                                <svg class="network-footer">
+                                    <use href="./img/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+
+                        </li>
+                        <li class="mob-soc-item"><a href="#" class="icon-wrap">
+                                <svg class="network-footer">
+                                    <use href="./img/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
 
     </header>
     <main>
@@ -285,7 +353,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
