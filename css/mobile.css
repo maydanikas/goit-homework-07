@@ -988,6 +988,7 @@ footer {
   flex-wrap: wrap;
   column-gap: 16px;
   row-gap: 72px;
+
   justify-content: center;
   /* width: 428px; */
 }
@@ -1000,14 +1001,14 @@ footer {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-svg > .icon {
-  width: 104px;
+  width: 160px;
   height: 56px;
 }
 
 .customers .icon-svg {
   fill: #8e8f99;
   display: flex;
-  width: 190px;
+  width: 120px;
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -1045,7 +1046,6 @@ footer {
     margin: 0 auto;
   }
   .customer-list {
-    gap: 16px;
   }
 
   .customers .icon-svg {
