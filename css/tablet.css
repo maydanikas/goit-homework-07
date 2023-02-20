@@ -96,7 +96,7 @@
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    width: 494px;
+    width: 496px;
   }
   section {
     padding-top: 96px;
@@ -113,6 +113,8 @@
 
   .benefits-content {
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
   }
 
   .section-content {
@@ -180,20 +182,22 @@
     width: 600px;
   }
   .footer-logo {
-    margin-right: ;
+    text-align: left;
   }
 
   .footer-box {
+    text-align: left;
     margin-left: 0;
-    margin-right: auto;
+    margin-right: 0;
     width: 264px;
     text-align: left;
   }
 
   .footer-media {
+    text-align: left;
     width: 208px;
     margin-left: 24px;
-    margin-right: 0;
+    margin-right: auto;
     margin-top: 0;
   }
   .footer-subscribe {
@@ -201,6 +205,9 @@
     margin-top: 72px;
     margin-left: 0;
     width: 453px;
+  }
+  .media-logo {
+    text-align: left;
   }
   .subscription-wrap {
     flex-wrap: nowrap;

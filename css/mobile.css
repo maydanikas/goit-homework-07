@@ -277,7 +277,7 @@ header {
 .benefits-content {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 72px;
 }
 
 .benefits-title {
@@ -916,7 +916,7 @@ footer {
   display: block;
   margin-bottom: 40px;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 25px;
   line-height: 1.11;
   text-transform: capitalize;
   text-decoration: none;
@@ -1037,6 +1037,7 @@ footer {
     padding-bottom: 112px;
   }
   .hero-title {
+    width: 319px;
     font-size: 36px;
   }
 
@@ -1046,6 +1047,11 @@ footer {
     margin: 0 auto;
   }
   .customer-list {
+  }
+  .benefits-content {
+    display: flex;
+    justify-content: center;
+    gap: 72px;
   }
 
   .customers .icon-svg {
