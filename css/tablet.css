@@ -1,8 +1,12 @@
 @media screen and (min-width: 768px) {
   .container {
     display: block;
-    width: 750px;
+    width: 736px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
   }
+
   /* NAVIGATION  */
   /* header > .container {
     display: flex;
@@ -61,8 +65,8 @@
   }
 
   .hero {
-    padding-top: 112px;
-    padding-bottom: 204px;
+    padding-top: 111px;
+    padding-bottom: 108px;
     background-image: linear-gradient(
         0deg,
         rgba(46, 47, 66, 0.7),
@@ -82,20 +86,29 @@
         url(../img/hero/hero-bg-tab-2x.jpg);
     }
   }
-
+  /*  */
   .hero-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
     font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    width: 494px;
   }
   section {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  .container {
-  }
 
   /* BENEFITS  */
   .benefits .item {
     width: calc((100% - 24px) / 2);
+  }
+  .benefits-title {
+    text-align: left;
   }
 
   .benefits-content {
@@ -162,12 +175,14 @@
   }
 
   .footer-box {
-    margin-right: 0;
+    margin-left: 0;
+    margin-right: auto;
     width: 264px;
     text-align: left;
   }
 
   .footer-media {
+    width: 208px;
     margin-left: 24px;
     margin-right: 0;
     margin-top: 0;
@@ -175,6 +190,8 @@
   .footer-subscribe {
     /* margin-left: auto; */
     margin-top: 72px;
+    margin-left: 0;
+    width: 453px;
   }
   .subscription-wrap {
     flex-wrap: nowrap;
@@ -182,26 +199,25 @@
 
   /* MODAL  */
 
- .modal {
-  /* position: absolute;
-  width: 408px;
-  height: 586px;
-  left: 50%;
-  top: 50%;
-  background-color: var(--moda-bg);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  
-  transform: translate(-50%, -50%); */
-}
+  .modal {
+    position: absolute;
+    width: 408px;
+    height: 586px;
+    left: 50%;
+    top: 50%;
+    background-color: var(--moda-bg);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
 
-.filters {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
-  margin-left: auto;
-  margin-right: auto;
+  .filters {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
